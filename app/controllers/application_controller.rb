@@ -35,6 +35,10 @@ class ApplicationController < Sinatra::Base
   end
 
   patch '/articles/:id' do
+    current_article = Article.find_by(id: params[:id])
+    title = params[:title]
+    content = params[:content]
+    current_article.update(title: title, content: content) 
   end
 
 end
