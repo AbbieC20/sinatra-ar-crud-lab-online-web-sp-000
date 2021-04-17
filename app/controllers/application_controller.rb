@@ -29,7 +29,7 @@ class ApplicationController < Sinatra::Base
     erb :show
   end
 
-  get '/articles/:id/edit'
-  end 
+  get '/articles/:id/edit' do
+  end
 
 end
