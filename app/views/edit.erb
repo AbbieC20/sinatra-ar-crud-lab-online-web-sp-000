@@ -9,6 +9,7 @@
     <h1>Edit an Article</h1>
 
     <form action="/articles/<%= @article.id %>" method="post">
+      <input id="hidden" type="hidden" name="_method" value="patch">
       Title: <input type="text" name="title">
       Content: <input type="text" name="content">
       <input type="submit" value="Submit"/>
