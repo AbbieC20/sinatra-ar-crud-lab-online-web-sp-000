@@ -42,4 +42,8 @@ class ApplicationController < Sinatra::Base
     redirect "/articles/#{current_article.id}"
   end
 
+  delete '/articles/:id'
+    Article.delete
+  end
+
 end
