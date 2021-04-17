@@ -43,7 +43,7 @@ class ApplicationController < Sinatra::Base
   end
 
   delete '/articles/:id'
-    Article.delete
+    Article.delete(params[:id])
   end
 
 end
